@@ -1,4 +1,5 @@
 // required dom elements
+// const RecordRTC = require('recordrtc')
 const buttonEl = document.getElementById('button');
 const messageEl = document.getElementById('message');
 const titleEl = document.getElementById('real-time-title');
@@ -10,7 +11,7 @@ let socket; //web socket
 let recorder; 
 
 const run = async () => {
-
+    console.log('clicked now run');
     isRecording = !isRecording; //change initial recording state from false to true
     buttonEl.innerText = isRecording ? 'Stop' : 'Record'; //change start button to recording button
     //if isRecording is true, innertext = 'Click stop to end..', else inner text = 'click start...'

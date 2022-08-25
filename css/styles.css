@@ -1,5 +1,13 @@
-.real-time-interface__button {
+/* .real-time-interface__button {
     height: 30px;
     width: 50px;
     background-color: green;
+} */
+
+#button {
+    height: 30px;
+    width: 50px;
+    background-color: rgb(128, 0, 119);
+    cursor: pointer;
+    
 }
