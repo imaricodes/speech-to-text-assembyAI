@@ -39,7 +39,7 @@ const run = async () => {
       // get session token from backend
         const response = await fetch('http://localhost:8000');
         const data = await response.json();
-
+        console.log('served temp token: ', data);
         if(data.error){
             alert(data.error)
         }
@@ -108,7 +108,8 @@ const run = async () => {
 
             recorder.startRecording();
             })
-            .catch((err) => console.error(err));
+            .catch((err) => {
+                console.error(err)});
         };
             }
         };
